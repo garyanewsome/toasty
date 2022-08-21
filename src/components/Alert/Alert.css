@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.alert {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 60%;
+  border: 1px solid #000000;
+  color: #ffffff;
+  animation: fadeIn 400ms ease;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.close {
+  width: 32px;
+  padding: 8px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background: none;
+  color: #ffffff;
+}
+
+.content {
+  padding: 32px;
+  background-color: #ffffff;
+  color: #333333;
+}

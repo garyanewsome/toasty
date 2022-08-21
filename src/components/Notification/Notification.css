@@ -1,0 +1,39 @@
+@keyframes NotificationSlideDown {
+  0% {
+    top: -100%;
+  }
+
+  20%,
+  80% {
+    top: 16px;
+  }
+
+  100% {
+    top: -100%;
+  }
+}
+
+.notification {
+  position: absolute;
+  top: -100%;
+  right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100% - 64px);
+  padding: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  animation: NotificationSlideDown 6s ease;
+}
+
+.close {
+  width: 32px;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background: none;
+  color: #ffffff;
+}

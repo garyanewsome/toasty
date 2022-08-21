@@ -1,0 +1,39 @@
+@keyframes ToastSlideIn {
+  0% {
+    right: -100%;
+  }
+
+  20%,
+  80% {
+    right: 16px;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+.toast {
+  position: absolute;
+  bottom: 16px;
+  right: -100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100% - 64px);
+  padding: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  animation: ToastSlideIn 6s ease;
+}
+
+.close {
+  width: 32px;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background: none;
+  color: #ffffff;
+}
